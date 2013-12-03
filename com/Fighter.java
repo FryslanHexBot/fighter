@@ -1,4 +1,4 @@
-package fighter;
+package fighter.com;
 
 import fighter.com.ui.UI;
 import fighter.com.worker.Eat;
