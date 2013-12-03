@@ -1,4 +1,4 @@
-package fighter.worker;
+package fighter.com.worker;
 
 import org.hexbot.core.concurrent.script.Worker;
 

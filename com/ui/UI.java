@@ -1,4 +1,4 @@
-package fighter.ui;
+package fighter.com.ui;
 
 /**
  * Created with IntelliJ IDEA.

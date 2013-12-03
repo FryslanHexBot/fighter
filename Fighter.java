@@ -1,9 +1,9 @@
 package fighter;
 
-import fighter.ui.UI;
-import fighter.worker.Eat;
-import fighter.worker.Kill;
-import fighter.worker.Loot;
+import fighter.com.ui.UI;
+import fighter.com.worker.Eat;
+import fighter.com.worker.Kill;
+import fighter.com.worker.Loot;
 import javafx.application.Platform;
 import org.hexbot.api.listeners.Paintable;
 import org.hexbot.core.concurrent.script.Info;
