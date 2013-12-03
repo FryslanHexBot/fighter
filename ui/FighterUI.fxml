@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="771.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="fighter.ui.Controller">
+  <children>
+    <TabPane prefHeight="480.0" prefWidth="771.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <tabs>
+        <Tab text="NPC">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <ListView layoutX="0.0" layoutY="225.0" prefHeight="237.0" prefWidth="771.0" />
+                <Label layoutX="41.0" layoutY="21.0" text="Select Npc(s) :" />
+                <ListView layoutX="125.0" layoutY="21.0" prefHeight="110.0" prefWidth="632.0" />
+                <Button layoutX="125.0" layoutY="131.0" mnemonicParsing="false" prefWidth="632.0" text="Add Npc" />
+                <Label layoutX="41.0" layoutY="167.0" text="Select Custom Npc(s) :" />
+                <TextField layoutX="167.0" layoutY="164.0" prefWidth="375.0" />
+                <Button layoutX="542.0" layoutY="164.0" mnemonicParsing="false" prefWidth="215.0" text="Add Custom NPC" />
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="203.0" prefHeight="22.0" prefWidth="744.0" text="Selected NPC(s)" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" underline="false" wrapText="false" />
+                <Separator layoutX="1.0" layoutY="198.0" prefWidth="771.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Looting">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Label layoutX="41.0" layoutY="21.0" text="Search :" />
+                <TextField layoutX="83.0" layoutY="18.0" prefWidth="533.0" />
+                <Button layoutX="616.0" layoutY="19.0" mnemonicParsing="false" text="Add Custom" />
+                <ListView layoutX="83.0" layoutY="40.0" orientation="VERTICAL" prefHeight="193.0" prefWidth="533.0" />
+                <Button layoutX="83.0" layoutY="233.0" mnemonicParsing="false" prefWidth="533.0" text="Add Selected NPC" />
+                <Separator layoutX="0.0" layoutY="266.0" prefWidth="771.0" />
+                <Label alignment="CENTER" layoutX="-1.0" layoutY="266.0" prefWidth="772.0" text="Selected Items" />
+                <ListView layoutX="0.0" layoutY="282.0" prefHeight="181.0" prefWidth="772.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Eating">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Label layoutX="46.0" layoutY="57.0" text="Select Food :" />
+                <ComboBox layoutX="158.0" layoutY="55.0" prefHeight="21.0" prefWidth="241.0">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Item 1" />
+                      <String fx:value="Item 2" />
+                      <String fx:value="Item 3" />
+                    </FXCollections>
+                  </items>
+                </ComboBox>
+                <Label layoutX="46.0" layoutY="30.0" text="Select Custom Food :" />
+                <TextField layoutX="160.0" layoutY="27.0" prefWidth="239.0" />
+                <Button layoutX="399.0" layoutY="28.0" mnemonicParsing="false" text="Add Custom Food" />
+                <ListView layoutX="158.0" layoutY="84.0" prefHeight="111.0" prefWidth="522.0" />
+                <Label layoutX="46.0" layoutY="124.0" text="Selected Food(s) :" />
+                <Label layoutX="46.0" layoutY="224.0" text="Eat Between :" />
+                <ChoiceBox layoutX="158.0" layoutY="222.0" prefWidth="94.0">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Item 1" />
+                      <String fx:value="Item 2" />
+                      <String fx:value="Item 3" />
+                    </FXCollections>
+                  </items>
+                </ChoiceBox>
+                <Label layoutX="259.0" layoutY="225.0" text="/" />
+                <ChoiceBox layoutX="272.0" layoutY="223.0" prefWidth="94.0">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Item 1" />
+                      <String fx:value="Item 2" />
+                      <String fx:value="Item 3" />
+                    </FXCollections>
+                  </items>
+                </ChoiceBox>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Settings">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Button fx:id="StartButton" layoutX="501.0" layoutY="425.0" mnemonicParsing="false" onAction="#startPressed" prefWidth="230.0" text="Start" />
+                <Button layoutX="271.0" layoutY="425.0" mnemonicParsing="false" prefWidth="230.0" text="Close" />
+                <Button layoutX="41.0" layoutY="425.0" mnemonicParsing="false" prefWidth="230.0" text="Thread" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>
